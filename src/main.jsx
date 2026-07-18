@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   BadgeCheck,
   ChevronDown,
@@ -280,6 +281,7 @@ function App() {
       <a className="floating-whatsapp" href={whatsappUrl(heroMessage)} target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp">
         <MessageCircle size={25} />
       </a>
+      <SpeedInsights />
     </>
   );
 }
