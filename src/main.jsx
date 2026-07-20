@@ -144,11 +144,7 @@ function App() {
           </div>
           <div className="hero-visual" aria-hidden="true">
             <img src="/assets/producto-temporal.png" alt="" />
-            <div className="quality-badge">
-              <span>Calidad</span>
-              Colombiana
-              <small>100% original</small>
-            </div>
+            <img className="quality-badge" src="/assets/calidad_colombiana.png" alt="" />
           </div>
         </section>
 

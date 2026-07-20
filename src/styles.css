@@ -227,31 +227,16 @@ nav a:hover {
   filter: drop-shadow(0 28px 38px rgb(54 31 22 / 18%));
 }
 
-.quality-badge {
+.hero-visual .quality-badge {
   position: absolute;
-  right: -10px;
+  right: 10px;
   bottom: 12%;
-  display: grid;
-  place-items: center;
   width: 132px;
   height: 132px;
-  padding: 18px;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  background: #101010;
-  border: 3px solid var(--gold);
+  object-fit: contain;
+  filter: drop-shadow(0 16px 22px rgb(54 31 22 / 18%));
   border-radius: 50%;
   box-shadow: var(--shadow);
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
-.quality-badge span,
-.quality-badge small {
-  display: block;
-  color: var(--gold);
-  font-size: 0.68rem;
 }
 
 .benefits {
@@ -697,12 +682,11 @@ nav a:hover {
     max-height: 520px;
   }
 
-  .quality-badge {
+  .hero-visual .quality-badge {
     right: 8px;
     bottom: 8%;
     width: 104px;
     height: 104px;
-    font-size: 0.76rem;
   }
 
   .benefits,
