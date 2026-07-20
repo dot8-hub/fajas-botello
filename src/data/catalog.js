@@ -1,7 +1,7 @@
 export const contact = {
   domain: "fajasbotello.com",
-  displayPhone: "+52 55 1234 5678",
-  whatsappNumber: "525512345678",
+  displayPhone: "+57 320 256 5311",
+  whatsappNumber: "573202565311",
 };
 
 const colorMap = {
