@@ -21,18 +21,19 @@ const whatsappUrl = (message) =>
 
 function ProductCard({ product }) {
   const [size, setSize] = useState(product.sizes[0]);
-  const [color, setColor] = useState(product.colors[0]);
+  const [color, setColor] = useState("");
+  const selectedImage = color ? product.images?.[color] ?? product.image : product.image;
 
   const message = useMemo(
     () =>
-      `Hola Botello, quiero comprar ${product.name}. Talla: ${size}. Color: ${color}. Estoy en Mexico y quiero confirmar disponibilidad, pago y envio.`,
+      `Hola Botello, quiero comprar ${product.name}. Talla: ${size}. Color: ${color || "por confirmar"}. Estoy en Mexico y quiero confirmar disponibilidad, pago y envio.`,
     [product.name, size, color],
   );
 
   return (
     <article className="product-card">
       <div className="product-image-wrap">
-        <img src={product.image} alt={product.name} className="product-image" />
+        <img src={selectedImage} alt={product.name} className="product-image" />
         <span className="product-tag">{product.tag}</span>
       </div>
       <div className="product-body">
@@ -143,7 +144,7 @@ function App() {
             </div>
           </div>
           <div className="hero-visual" aria-hidden="true">
-            <img src="/assets/producto-temporal.png" alt="" />
+            <img className="hero-cover" src="/assets/cover.png" alt="" />
             <img className="quality-badge" src="/assets/calidad_colombiana.png" alt="" />
           </div>
         </section>
