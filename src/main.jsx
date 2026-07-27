@@ -205,7 +205,7 @@ function App() {
         <section className="section policies" id="politicas">
           <div className="section-heading">
             <p className="eyebrow">Compra clara</p>
-            <h2>Políticas básicas</h2>
+            <h2>Políticas</h2>
           </div>
           <div className="policy-grid">
             <article>
