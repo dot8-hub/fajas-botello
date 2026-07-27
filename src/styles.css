@@ -803,9 +803,6 @@ nav a:hover {
   }
 
   .floating-whatsapp {
-    right: 12px;
-    bottom: 12px;
-    width: 50px;
-    height: 50px;
+    display: none;
   }
 }
