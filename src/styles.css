@@ -720,9 +720,78 @@ nav a:hover {
     padding: 52px 18px;
   }
 
+  .product-card {
+    border-radius: 7px;
+  }
+
+  .product-image-wrap {
+    aspect-ratio: 1 / 1;
+    background: #fff;
+  }
+
+  .product-image {
+    object-fit: contain;
+  }
+
+  .product-tag {
+    top: 10px;
+    left: 10px;
+    padding: 6px 9px;
+    font-size: 0.7rem;
+  }
+
+  .product-body {
+    gap: 10px;
+    padding: 14px;
+  }
+
   .product-body h3,
   .product-body p {
     min-height: auto;
+  }
+
+  .product-body h3 {
+    font-size: 0.96rem;
+    line-height: 1.2;
+  }
+
+  .product-body p {
+    font-size: 0.86rem;
+    line-height: 1.38;
+  }
+
+  .product-body strong {
+    font-size: 1rem;
+  }
+
+  .option-group {
+    gap: 6px;
+  }
+
+  .segmented {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .segmented button {
+    min-height: 32px;
+    padding: 0 4px;
+    font-size: 0.86rem;
+  }
+
+  .swatches {
+    gap: 7px;
+  }
+
+  .swatches button {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
+
+  .product-body .button {
+    min-height: 40px;
+    font-size: 0.76rem;
   }
 
   .trust-band div {
@@ -731,5 +800,12 @@ nav a:hover {
 
   .footer {
     align-items: start;
+  }
+
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
+    width: 50px;
+    height: 50px;
   }
 }
