@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   BadgeCheck,
   ChevronDown,
+  Facebook,
   Heart,
   MapPin,
   MessageCircle,
@@ -106,7 +107,7 @@ function App() {
     <>
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Botello inicio">
-          <img src="/assets/logo.jpeg" alt="Botello" />
+          <img src="/assets/logo.png" alt="Botello" />
         </a>
         <nav>
           <a href="#coleccion">Colección</a>
@@ -263,13 +264,17 @@ function App() {
 
       <footer className="footer" id="contacto">
         <div>
-          <img src="/assets/logo.jpeg" alt="Botello" />
+          <img src="/assets/logo.png" alt="Botello" />
           <p>Fajas colombianas para México.</p>
         </div>
         <div>
           <h2>Contacto</h2>
           <a href={whatsappUrl(heroMessage)} target="_blank" rel="noreferrer">
             WhatsApp: {contact.displayPhone}
+          </a>
+          <a className="social-link" href={contact.facebookUrl} target="_blank" rel="noreferrer">
+            <Facebook size={17} />
+            Facebook
           </a>
           <span>{contact.domain}</span>
         </div>

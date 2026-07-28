@@ -2,11 +2,13 @@ export const contact = {
   domain: "fajasbotello.com",
   displayPhone: "+57 320 256 5311",
   whatsappNumber: "573202565311",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61592364278753",
 };
 
 const colorMap = {
   Negro: "#111111",
   Beige: "#d8bfa9",
+  Rosa: "#ef9fb4",
 };
 
 const allSizes = ["XS", "S", "M", "L", "XL", "2XL"];
@@ -56,5 +58,19 @@ export const products = [
     colors: ["Negro", "Beige"],
     colorMap,
     description: "Chaleco de compresion firme para abdomen, cintura y espalda alta.",
+  },
+  {
+    id: "cinturilla-extrema",
+    name: "Cinturilla Extrema",
+    price: "$1,300 MXN",
+    tag: "9 varillas",
+    image: "/assets/cinturilla_extrema/main.png",
+    images: {
+      Negro: "/assets/cinturilla_extrema/main.png",
+    },
+    sizes: allSizes,
+    colors: ["Negro", "Beige", "Rosa"],
+    colorMap,
+    description: "Cinturilla de alta compresion en powernet para moldear cintura, aplanar abdomen y mejorar postura.",
   },
 ];

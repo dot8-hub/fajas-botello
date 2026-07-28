@@ -578,6 +578,12 @@ nav a:hover {
   margin-top: 8px;
 }
 
+.footer .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .floating-whatsapp {
   position: fixed;
   right: 20px;
